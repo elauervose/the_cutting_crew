@@ -69,7 +69,7 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		
+
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
@@ -129,7 +129,16 @@
 		max-width: 100%;
 		height: auto; }
 
-
+/* #fix google map iframe so it doesn't zoom when you scroll over it
+================================================== */
+        .overlay {
+           background:transparent;
+           position:relative;
+           width:640px;
+           height:480px; /* your iframe height */
+           top:480px;  /* your iframe height */
+           margin-top:-480px;  /* your iframe height */
+        }
 
 
 /* #Forms
@@ -182,16 +191,16 @@
 		font-weight: normal;
 		font-size: 13px;
 		color: #444; }
-		
+
 input[type="text"] {
-    width: 280px !important; 
+    width: 280px !important;
 }
 
 input[type="text"].search {
     width: 100% !important;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
 }
 
 input.search-ie { display:none }
@@ -213,9 +222,9 @@ input[type="text"],  textarea,  select {
 	-webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .1s ease-in-out;
 	-o-transition: all .1s ease-in-out;
-	transition:  all .1s ease-in-out; 
-	position:relative; 
-	top:0px; 
+	transition:  all .1s ease-in-out;
+	position:relative;
+	top:0px;
 	left:0px;
 }
 
@@ -235,9 +244,9 @@ input:focus,  textarea:focus {
 	-webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .1s ease-in-out;
 	-o-transition: all .1s ease-in-out;
-	transition:  all .1s ease-in-out; 
-	position:relative; 
-	top:-2px; 
+	transition:  all .1s ease-in-out;
+	position:relative;
+	top:-2px;
 	left:-2px;
 }
 
@@ -494,15 +503,15 @@ input:focus,  textarea:focus {
 
 
 /* #To use a boxed layout un-comment this section
-================================================== 
-	
-.boxed { 
-	width:980px; 
+==================================================
+
+.boxed {
+	width:980px;
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-	background: rgba(255, 255, 255, 0.9); 
-	margin:0 auto; 
+	background: rgba(255, 255, 255, 0.9);
+	margin:0 auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 .boxed { width: 768px; }
@@ -518,4 +527,3 @@ input:focus,  textarea:focus {
 	background:url(../../images/transparent-w-90.png)
 } */
 
-	
