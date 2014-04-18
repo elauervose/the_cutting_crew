@@ -1,0 +1,458 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Hipster Documentation - Beantown Design</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Hipster&rdquo; Documentation by &ldquo;Beantown Design&rdquo; v1.7</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Hipster&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+				Created: 11/01/2012<br>
+				  </strong><strong>Last Updated: 6/12/2013<br>
+			    By: Beantown Design<br>
+			    Twitter.com/BeantownDesign
+			    <br>
+			    </strong>			    </p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing Hipster. If you have any questions that are beyond the scope of this help file, please feel free to <a href="http://beantowndesign.com/support/forum" target="_blank">visit our support forum</a>.  Thanks!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+        	<li><a href="#a">Fonts</a></li>
+        	<li><a href="#b">Responsive Design Explained</a></li>
+        	<li><a href="#c">CSS Files</a></li>
+			<li><a href="#d">HTML Structure</a></li>
+			<li><a href="#e">Social Icons</a></li>
+			<li><a href="#f">Main Navigation</a></li>
+			<li><a href="#g">Homepage Slider</a></li>
+			<li><a href="#h">Homepage Video</a></li>
+			<li><a href="#i">Homepage Content</a></li>
+			<li><a href="#j">Setting up Logo</a></li>
+			<li><a href="#k">Staff Page</a></li>
+			<li><a href="#l">FAQ Page</a></li>
+			<li><a href="#m">Service Icons</a></li>
+			<li><a href="#n">Lists</a></li>
+			<li><a href="#o">Typography</a></li>
+			<li><a href="#p">Responsive Videos</a></li>
+			<li><a href="#q">Standard Portfolio Pages</a></li>
+			<li><a href="#r">Sortable Portfolio Page</a></li>
+			<li><a href="#s">Single Portfolio Pages</a></li>
+			<li><a href="#t">Contact Map</a></li>
+			<li><a href="#u">Contact Form</a></li>
+			<li><a href="#v">Facebook Box</a></li>
+			<li><a href="#w">Twitter Feed</a></li>
+			<li><a href="#x">Instagram Feed</a></li>
+            <li><a href="#y">Choosing a Boxed Layout</a></li>
+            <li><a href="#z">Setting Page Background &amp; Footer Backgrounds</a></li>
+            <li><a href="#aa">Setting Full Screen Image Backgrounds / Rotating Full Screen Backgrounds</a></li>
+			<li><a href="#ab">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+        <!--- section -->
+		<h3 id="a"><strong>A) Installing Fonts</strong> - <a href="#toc">top</a></h3>
+		<p>The following fonts have been included in your template, so no extra work is included to use them!</p>
+		<p><a href="http://www.fontsquirrel.com/fonts/download/KelmscottRoman">http://www.fontsquirrel.com/fonts/download/KelmscottRoman</a><br>
+        <a href="http://www.fontsquirrel.com/fonts/download/League-Gothic">http://www.fontsquirrel.com/fonts/download/League-Gothic		</a>		<br>
+        <a href="http://www.fontsquirrel.com/fonts/Droid-Sans" target="_blank">http://www.fontsquirrel.com/fonts/Droid-Sans		</a></p>
+		
+	  <hr><!--- /section -->
+
+		<!--- section -->
+		<h3 id="b"><strong>B) Responsive Design Explained</strong> - <a href="#toc">top</a></h3>
+
+		<p>Most likely you are already familiar with responsive design, including how it works, what the benefits are, etc. I figured I would briefly go over the topic in case you are unfamiliar with responsive design.</p>
+		<p>Before responsive design most sites were a fixed width, meaning the content area would always be the same size, no matter what screen size you were using. This was fine since most people were viewing websites from similar desktop browsers. As technology evolved there became a large variety of devices/screen sizes that you could now view a website on. I'm sure you have visited a fixed width website on your smartphone and had to deal with zooming, scrolling, loading issues, etc. Responsive design was the solution to this issue. Responsive layouts adjust the content to the screen size you are using, instead of being a fixed width. There are many benefits (no zooming, no need for an additional mobile-specific website, etc). </p>
+		<p><img src="assets/images/responsive.jpg" width="600" height="445" alt="responsive"></p> 
+
+		<hr><!--- /section -->
+		
+        <!--- section -->
+		<h3 id="c"><strong>C) CSS Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Hipster was built on top of the popular responsive framework <a href="http://www.getskeleton.com/" target="_blank">Skeleton</a>. Skeleton is a responsive framework which uses media queries to adjust the size of columns and rows depending on your screen width. Skeleton also includes basic CSS styling. Inside your stylesheets folder you'll see a base.css stylesheet. This stylesheet contains the Skeleton framework CSS styling and structure (modified for Hipster). The main stylesheet for Hipster is styles.css.	The top of the stylesheet has a table of contents which explains the order of all CSS section located in the stylesheet.</p>
+		<p>There are 3 different color schemes which can be chosen by using style1.css, style2.css or style3.css. There are also option black and white icons which can be used, the CSS code for these icons is located within style-bw.css.</p>
+		<p><img src="assets/images/style.jpg" width="337" height="51" alt="style"></p>
+		<p><img src="assets/images/toc.jpg" width="398" height="367" alt="toc"></p>
+		<hr><!--- /section -->
+		
+        <!--- section -->
+		<h3 id="d"><strong>D) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<p>A typical page in Hipster contains the head, header section with logo and nav, the left column, right column and then the footer. It's easy to create custom layouts once you understand how the framework works. To create a section that is 960px wide and centers itself in the browser window, add the class &quot;container&quot; to the div. </p>
+		<p><img src="assets/images/columns.jpg" width="762" height="157" alt="columns"></p>
+		<p>The Hipster framework is created with a 16 column layout (so from the left column of the .container to the right column of the .container there are 16 columns). The basic structure to set up a "row" in your layout is the add a div with the class of container (the class .container centers the content within in the middle of the browser window), inside that add a div with the class row (the class .row clears other floats/rows) and then within that add divs with the width you want, the total should add up to 16 columns. These columns stack when smaller browser window sizes are being used. There are additional options such as one-third columns, see the column.html page for sample code.</p>
+		
+        <p><strong>Example:</strong><br /><img src="assets/images/rows.jpg" width="286" height="186" alt="rows"></p>
+        <p><strong>Example:</strong><br /><img src="assets/images/columns3.jpg" width="320" height="161" alt="columns"></p>
+        <p><strong>Example:</strong><br /><img src="assets/images/columns2.jpg" width="455" height="219" alt="columns"></p>
+      <hr><!--- /section -->
+        
+        
+        
+   	  <!--- section -->
+        <h3 id="e"><strong>E) Social Icons</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Below is a screenshot showing the available social icons for use in the header. Notice the title of the social icons, these titles are the text in the tooltips on mouse hover. The css class decides which icon is used.</p>
+	  		<p><img src="assets/images/social2.jpg" alt="social"></p>
+            <p><img src="assets/images/social.jpg" alt="social" width="766" height="83"></p>
+	  		
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="f"><strong>F) Main Navigation</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>The main navigation of Hipster is an unordered list (see below). Nested untitled lists become drop down menus. Add the class level-1, level-2, level-3 on unordered lists, depending on what level they're on. The menu becomes a dropdown menu for smaller screens, which is great for mobile devices.</p>
+	  		<p><img src="assets/images/nav.jpg" width="550" height="331" alt="nav"><img src="assets/images/mobile.jpg" width="249" height="369" alt="mobile"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="g"><strong>G) Homepage Slider</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Located at the bottom of your index.html file you will see the slider javascript code. There are 12 possible transition effects for the slider. To change effects simply change the name of the javascript file, highlighted below.
+      </p>
+	  		<p><img src="assets/images/slider-script.jpg" width="436" height="68" alt="slider"></p>
+	  		<p><strong>The options are:</strong></p>
+	  		<ul>
+            	<li>script-blast.js</li>
+            	<li>script-blinds.js</li>
+            	<li>script-blur.js</li>
+            	<li>script-fade.js</li>
+            	<li>script-fly.js</li>
+            	<li>script-kenburns.js</li>
+            	<li>script-rotate.js</li>
+            	<li>script-slices.js</li>
+            	<li>script-slide.js</li>
+            	<li>script-squares.js</li>
+            	<li>script-stack.js</li>
+            	<li>script-stackvertical.js</li>
+            </ul>
+            
+      <p>The size of the slider images is 940 X 404px. The size of the tooltip images is 209 x 90px. Below you can see the slider code, first the images are called out and then the bullet (tooltip) images are called out. Notice the two highlighted areas below, which show the 2 sections used for the text captions over the images.</p>
+      <p><img src="assets/images/slider.jpg" width="759" height="255" alt="slider"></p>
+            
+            <p><img src="assets/images/caption.jpg" width="646" height="299" alt="caption"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="h"><strong>H) Homepage Video</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Thanks to the FitVids.js script being used in Hipster, adding a responsive video to the homepage is as easy as adding the embed code, example (see index-video.html in your download):</p>
+	  		<p><img src="assets/images/video.jpg" width="513" height="104"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="i"><strong>I) Homepage Content</strong>- <a href="#toc">top</a></h3>
+		
+	  		<p>Below the slider or video on your homepage you will see the main title and service areas:</p>
+	  		<p><img src="assets/images/home-content.jpg" width="785" height="312" alt="home"></p>
+            
+            <p><strong><a href="#m">Click here</a></strong> to view the possible service icons.</p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="j"><strong>J) Setting up Logo</strong> - <a href="#toc">top</a></h3>
+        <p><img src="assets/images/logo.jpg" width="363" height="106" alt="logo"></p>
+		
+	  		<p>The logo in Hipster is placed as a background image on the h1 tag with the id=&quot;logo&quot;</p>
+            <p><img src="assets/images/logo-code.jpg" width="222" height="53" alt="logo"></p>
+	  		<p>To setup the logo in the header of your website you will need to create a few logo image files. The Hipster logo was created with 4 different versions	(a	version for non-HD large screens, a version for HD large screens, a version for non-HD small screens, and a version for HD small screens). Adding the 4 versions takes a little extra work, but it's worth it. This allows your logo to look super sharp on retina displays, and also allows you to show a larger version of the logo on larger browsers. The easiest way to add your logo would be to make your logo the same size as the 4 demo images included with the download, if you need to use different size this is the CSS that you want to adjust.</p>
+	  		<ul>
+            <li>Don't make your small logo version any wider than 300px.</li>
+            <li>The HD versions of the logos are created exactly twice as large as the non-HD version, CSS background-size then sets the size of this image, making it the correct size and clear.</li>
+            </ul>
+	  		
+	  		<p><img src="assets/images/logo-css.jpg" width="537" height="573" alt="logo"></p>
+  		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="k"><strong>K) Staff Page </strong>- <a href="#toc">top</a></h3>
+		
+	  		<p>Below is a screenshot showing where you can edit the info for staff members, including the email address, name, title, description and social icons.</p>
+	  		<p><img src="assets/images/staff.jpg" width="757" height="357" alt="staff"></p>
+            
+            <p>The complete list of icons available for use on the staff page are as follows (these are the css class names used to choose an icon):</p>
+            
+            <ul>
+<li>twitter</li>
+<li>dribbble</li>
+<li>facebook</li>
+<li>linked</li>
+<li>flickr</li>
+<li>vimeo</li>
+<li>plus</li>
+<li>pin</li>
+<li>stumble</li>
+<li>yelp</li>
+<li>youtube</li>
+<li>rss</li>
+<li>paypal</li>
+<li>instagram</li>
+<li>phone</li>
+<li>mail</li>
+<li>map</li>
+<li>linked</li>
+
+</ul>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="l"><strong>L) FAQ Page</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>To add info to the FAQ accordion, enter your heading title into the h2 tag with the class=&quot;accordion-header&quot; and enter the content for the question in following div with the class=&quot;accordion-content&quot;.</p>
+	  		<p><img src="assets/images/faq-code.jpg" width="486" height="275" alt="faq"></p>
+	  		<p><img src="assets/images/faq.jpg" width="571" height="392" alt="faq"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="m"><strong>M) Service Icons</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Hipster comes with 27 @2X icons, perfect for your services or any other creative use. To choose your icon, simply change the class name, shown below (see services.html with your download for all icons):</p>
+            <p><img src="assets/images/service.jpg" width="478" height="65" alt="services"></p>
+            <img src="assets/images/services-icon.jpg" width="526" height="479" alt="icons" style="float:right">
+      <p><strong>Possible Icons:</strong></p>
+            <ul>
+            	<li>search</li>
+            	<li>clip</li>
+            	<li>phone</li>
+            	<li>map</li>
+            	<li>share</li>
+            	<li>heart</li>
+            	<li>printer</li>
+            	<li>gear</li>
+            	<li>trophy</li>
+            	<li>camera</li>
+            	<li>palette</li>
+            	<li>circles</li>
+            	<li>music</li>
+            	<li>bag</li>
+            	<li>mic</li>
+            	<li>time</li>
+            	<li>security</li>
+            	<li>warning</li>
+            	<li>files</li>
+            	<li>video</li>
+            	<li>pics</li>
+            	<li>cloud</li>
+            	<li>sound</li>
+            	<li>write</li>
+            	<li>flag</li>
+            	<li>users</li>
+            	<li>mix</li>
+            	<li>eye</li>
+            	<li>bell</li>
+            	<li>chat</li>
+            </ul>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="n"><strong>N) Lists</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p><img src="assets/images/lists.jpg" width="781" height="188" alt="lists"></p>
+            
+<p>There are 7 options for styling unordered lists. To choose an option add one of the following classes to the  UL tag:</p>
+<img src="assets/images/list.jpg" width="302" height="61" alt="list" style="float:right; margin-right:300px">
+<ul>
+   	  <li>bullets</li>
+            	<li>arrow1</li>
+            	<li>arrow2</li>
+            	<li>arrow3</li>
+            	<li>check</li>
+            	<li>star</li>
+            	<li>diamond</li>
+            </ul>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="o"><strong>O) Typography </strong>- <a href="#toc">top</a></h3>
+		
+	  		<p>Typography.html shows typography styles in Hipster. To add a retro shadow to an item, add: class=&quot;retro-shadow&quot; to an html element.</p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="p"><strong>P) Responsive Videos</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>FitVids.js has been added to Hipster to make embedding responsive videos super easy. See videos.html for embedding demos, simply embed your video on the page and FitVids.js makes the video expand to the width of the column it is within.</p>
+	  		<p><img src="assets/images/videos.jpg" width="730" height="129" alt="videos"></p>
+
+		
+	  <hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="q"><strong>Q) Standard Portfolio Pages</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>The standard portfolio page layouts use columns to resize the portfolio items as screen sizes change. A class of fancybox is placed on links opening the responsive lightbox for images, and the classes various and fancybox.iframe are placed on the links that open the lightbox for videos. By default the magnifying glass is shown when hovering over portfolio items. Other possible hover graphics can be applied by adding a class on the portfolio-item-container div (see the video example below). The possible classes are <strong>video, link and email</strong>. The title tag on the image link is used as the title which is displayed when viewing the lightbox.</p>
+	  		<p><img src="assets/images/fancybox.jpg" width="784" height="469" alt="fancybox"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="r"><strong>R) Sortable Portfolio Page </strong>- <a href="#toc">top</a></h3>
+		
+	  		<p>The sortable portfolio has a navigation above the images, this is where you set your categories. Add a unique title on each link in this nav. To place an image in a category you need to add the title name to the port-item-container as a class (see below). Items can be in multiple categories, simply add multiple title names as classes.</p>
+	  		<p><img src="assets/images/sortable.jpg" width="442" height="599" alt="sortable"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="s"><strong>S) Single Portfolio Pages</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>The single portfolio page for images has an easy to use image slider. Simply add your images to the list shown below:</p>
+	  		<p><img src="assets/images/single-portfolio.jpg" width="467" height="162" alt="single"></p>
+	  		<p>An additional single video template page is included. Simply embed your video and the FitVids.js script makes your video responsive:</p>
+	  		<p><img src="assets/images/single-video.jpg" width="366" height="39" alt="video"></p>
+
+		<hr><!--- /section -->
+        
+        
+        
+      <!--- section -->
+        <h3 id="t"><strong>T) Contact Map</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>To set the latitude and longitude of the marker on the contact map (as well as set the zoom level), open <strong>screen.js</strong> and look for the following, on <strong>line #25</strong> :</p>
+	  		<p><img src="assets/images/map.jpg" width="368" height="65" alt="map"></p>
+	  		<p>You can get the longitude and latitude of your address <a href="http://itouchmap.com/latlong.html" target="_blank">with this tool online</a>.</p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="u"><strong>U) Contact Form</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>To setup your address form open <strong>includes > form.php</strong>. On line #41 you will see the line to enter your email address (the address you want the form submission to be mailed to).</p>
+	  		<p><img src="assets/images/email.jpg" width="451" height="60" alt="email"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="v"><strong>V) Facebook Box</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Adding a Facebook like box is easy with <a href="http://developers.facebook.com/docs/reference/plugins/like-box/" target="_blank">code provided by Facebook</a>. Usually the Facebook box is a set width, Hipster has custom CSS code so the like box is responsive and will change depending on the column width.</p>
+            
+            <p><img src="assets/images/facebook.jpg" width="778" height="431" alt="facebook"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="w"><strong>W) Twitter Feed</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>On line <strong>#450 in scripts.js</strong> you will find the spot to enter your Twitter user name and the amount of tweets you want to display.</p>
+	  		<p><img src="assets/images/twitter.jpg" width="170" height="44" alt="twitter"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="x"><strong>X) Instagram Feed</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>On line <strong>#602 in scripts.js</strong> you will find the spot to <strong>enter your Instagram user ID</strong> and the number of recent images that you want to display. <a href="http://yvesvanbroekhoven.github.com/get-your-instagram-user-id/" target="_blank">Click here</a> to find your Instagram user ID.</p>
+	  		<p><img src="assets/images/instagram.jpg" width="443" height="142" alt="instagram"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="y"><strong>Y) Choosing a Boxed Layout</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>The default layout of Hipster allows the background pattern to show through the content area nd the top header bar and footer area are both 100% width of the screen. You can instead choose to use a "boxed" layout, which pulls the header and footer bars into the middle and sets a background with a subtle shadow to the middle content area. This gives a different effect, useful if you choose to use a full screen image as your background, or a daker pattern. To choose the boxed layout open base.css andd scroll to the very bottom of the file. You will see code commented out. If you un-comment this code the boxed layout will be activated. The highlighted area in yellow below shows where you can set the background color of the boxed content area, as well as the opacity level.</p>
+	  <h3>Not-Boxed (default):</h3>
+        <img src="assets/images/not-boxed.jpg" width="780" height="282" alt="not-boxed">
+        <h3>Boxed:</h3>
+        <img src="assets/images/boxed.jpg"  alt="boxed">
+      <hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="z"><strong>Z) Setting Page Background &amp; Footer Backgrounds</strong> - <a href="#toc">top</a></h3>
+		
+	  		<p>Included with Hipster are multiple background textures for customizing your site. The images are broken into light and dark folders inside the images > backgronds folder. Below you can see the code you need to change in your stylesheet to choose a different background.</p>
+	  		<p><img src="assets/images/backs.jpg" alt="backs"></p>
+
+		<hr><!--- /section -->
+        
+        <!--- section -->
+        <h3 id="aa"><strong>AA) Setting Full Screen Image Backgrounds / Rotating Full Screen Backgrounds</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>Setting a full screen image and setting multiple transitioning full screen background images on a page is simple, just use the code below. You can also change the transition speed with this code. Place the code at the bottom of your page.</p>
+	  		<p><strong>Single Image:</strong><br /><img src="assets/images/full1.jpg"  alt="full"></p>
+            <p><strong>Rotating Images:</strong><br /><img src="assets/images/full2.jpg"  alt="full"></p>
+
+		<hr><!--- /section -->
+        
+        
+		
+	  <h3 id="ab"><strong>AB) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, scripts or other files as listed.
+		
+		<ul>
+            <li><a href="http://onehackoranother.com/projects/jquery/tipsy/" target="_blank">Tipsy</a> (MIT license)</li>
+            <li><a href="http://www.smashinglabs.pl/gmap" target="_blank">gMap</a> (MIT license)</li>
+            <li><a href="http://responsiveslides.com" target="_blank">Responsive Slides</a> (MIT license)</li>
+            <li><a href="https://github.com/srobbin/jquery-backstretch" target="_blank">jQuery Backstretch</a> (MIT license)</li>
+          <li><a href="http://isotope.metafizzy.co" target="_blank">Isotope</a> (Commercial license)</li>
+            
+            <li><a href="http://wowslider.com/" target="_blank">WOW! Slider</a> (Enterprise license)</li>
+			
+            <li><a href="http://www.mattvarone.com/web-design/uitotop-jquery-plugin/" target="_blank">UItoTop</a> (GNU GPLv2 license)</li>
+            <li><a href="http://fancyapps.com/fancybox/" target="_blank">fancyBox</a> (Commercial license)</li>
+            <li><a href="http://codecanyon.net/item/simple-instagram-fancybox/2621553" target="_blank">jQuery Simple Instagram Fancybox</a> (Extended license)</li>
+            <li><a href="http://fitvidsjs.com/">FitVids</a> (WTFPL license)</li>
+            <li><a href="http://www.getskeleton.com/" target="_blank">Get Skeleton Framework</a> (MIT license)</li>
+            <li>Backgrounds from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns.com</a> (CC BY-SA license)</li>
+            <li>Droid Sans font from <a href="https://developers.google.com/webfonts/" target="_blank">Google Font API</a> (<a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache license</a>)</li>
+            <li>Fonts from <a href="http://www.fontsquirrel.com/" target="_blank">fontsquirrel.com</a> (SIL Open Font license)</li>
+            <li>Icons from <a href="http://www.entypo.com/" target="_blank">entypo.com</a> (CC BY-SA license)</li>
+			<li>Demo Photos from Photodune</li>
+			<li>Demo Videos:
+			  <ul>
+              	<li><a href="http://vimeo.com/735401" target="_blank">http://vimeo.com/735401</a></li>
+			  	<li><a href="http://www.youtube.com/watch?v=XSGBVzeBUbk" target="_blank">http://www.youtube.com/watch?v=XSGBVzeBUbk</a></li>
+		    	<li><a href="http://vimeo.com/23199805" target="_blank">http://vimeo.com/23199805</a></li>
+              </ul>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing Hipster! Make sure to follow Beantown Design on <a href="http://twitter.com/beantowndesign" target="_blank">Twitter</a>, <a href="http://www.facebook.com/pages/Beantown-Design/116776085032137" target="_blank">Facebook</a>, <a href="themeforest.net/user/beantowndesign" target="_blank">ThemeForest</a> (for updates and new items), and check out <a href="http://WebDesignAndSuch.com" target="_blank">WebDesignAndSuch.com</a>, Beantown Design's web design/development blog. If you need help please <a href="http://support.beantowndesign.com" target="_blank">visit our support forum</a>.</p> 
+		
+		<p class="append-bottom alt large"><strong>Beantown Design</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
